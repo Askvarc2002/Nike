@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Style.css" />
+
+<body>
+<h1>BEZIER</h1>
+
+<div class="navbar">
+  <a class="active" href="file:///C:/Users/Uporabnik/Desktop/nike/Original.html#">Original</a> 
+  <a href="file:///C:/Users/Uporabnik/Desktop/nike/SVG.html#">SVG</a> 
+  <a href="file:///C:/Users/Uporabnik/Desktop/nike/Nike.html#">Bezier</a> 
+  
+</div>
+<canvas id="myCanvas" width="500" height="300" >
+</canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+  ctx.beginPath();
+  ctx.moveTo(66, 46 );
+  ctx.bezierCurveTo(50 , 124 , 104, 84 , 251 , 51);
+  ctx.bezierCurveTo(61, 129 , -1 , 154 , 62 , 50 );
+  ctx.fillStyle='Green';
+  ctx.stroke();
+  ctx.lineWidth=1;
+  ctx.fill();
+
+
+
+</script>
+
+</body>
+</html> 
